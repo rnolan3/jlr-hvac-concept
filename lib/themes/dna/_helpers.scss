@@ -1,6 +1,7 @@
 
 $white:               #fff;
 $white10:             rgba($white, .1);
+$white33:             rgba($white, .33);
 $black:               #000;
 
 $light-blue:          rgb(170, 240, 255);
@@ -8,7 +9,7 @@ $orange:              #ff604b;
 $orange-bg:           rgba(darken($orange, 15%), .25);
 
 $base-border-size:    4px;
-$base-border-color:   $white10;
+$base-border-color:   $white33;
 
 $button-border-size:  5px;
 
