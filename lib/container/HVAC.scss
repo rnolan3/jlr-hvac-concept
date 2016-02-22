@@ -4,7 +4,7 @@
 
 // Use when there are heated seat buttons.
 // $gutter: 8%;
-$gutter: 135px;
+$gutter: 160px;
 
 .wrapper {
   bottom: 0;
@@ -38,9 +38,17 @@ $gutter: 135px;
   left: $gutter;
 }
 
+.fanGroup {
+  height: 500px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 60%;
+}
+
 :global(.grow-appear) {
   height: 100%;
-  opacity: 0;
+  //opacity: 0;
 }
 
 :global(.grow-appear-active) {

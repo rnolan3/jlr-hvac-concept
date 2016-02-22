@@ -2,10 +2,22 @@
 @import '../../themes/dna/helpers';
 
 .dial {
-  border: $base-border-size solid $white10;
+  // border: $base-border-size solid $white10;
   border-radius: $dial-size / 2;
   height: $dial-size;
   width: $dial-size;
+
+  &:after {
+    background: $black;
+    content: '';
+    display: block;
+    height: $dial-size - 124;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: $dial-size - 124;
+  }
 }
 
 .progress {
@@ -23,6 +35,7 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .handle {
