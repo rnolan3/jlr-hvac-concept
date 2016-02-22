@@ -1,29 +1,49 @@
 // Standard Button
 @import '../../themes/dna/helpers';
 
+$button-off-opacity: .5;
+
 .base {
   @extend %button;
   color: $white;
-  opacity: .5;
-  transition: opacity $animation-fast;
+}
 
-  &:after {
-    background: $base-border-color;
-    bottom: 0;
-    content: '';
-    height: $button-border-size;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    transition: background $animation-fast;
-    width: 80px;
+.value {
+  opacity: 0;
+  transition: opacity $animation-very-slow;
+}
+
+.bar {
+  background-color: $base-border-color;
+  content: '';
+  display: block;
+  height: $button-border-size;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color $animation-slow, top $animation-slow;
+  width: 80px;
+}
+
+.activated {
+  .bar {
+    background-color: $base-border-color;
+    transition-duration: $animation-fast;
+  }
+
+  .value {
+    opacity: $button-off-opacity;
+    transition-duration: $animation-fast;
   }
 }
 
 .on {
-  opacity: 1;
+  .value {
+    opacity: 1;
+  }
 
-  &:after {
+  .bar {
     background: $light-blue;
   }
 }

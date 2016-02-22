@@ -8,5 +8,6 @@
   justify-content: flex-end;
   position: absolute;
   right: $fan-gutter;
-  top: $fan-pos-top;
+  top: 50%;
+  transform: translateY(-50%);
 }

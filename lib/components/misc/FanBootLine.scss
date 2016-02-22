@@ -1,0 +1,22 @@
+@import '../../themes/dna/helpers';
+
+.line {
+  background: $base-border-color;
+  content: '';
+  display: block;
+  height: $base-border-size;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width $animation-very-slow;
+  width: 0;
+
+  &.active {
+    width: 100%;
+  }
+
+  &.complete {
+    display: none;
+  }
+}

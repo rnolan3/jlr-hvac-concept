@@ -2,11 +2,10 @@
 @import '../../themes/dna/helpers';
 
 .wrapper {
-  background: $black;
   height: $dial-size;
   left: 50%;
   position: absolute;
-  top: 62%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: $dial-size;
 }

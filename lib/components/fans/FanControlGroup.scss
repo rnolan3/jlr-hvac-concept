@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   left: $fan-gutter;
-  position: absolute;;
-  top: $fan-pos-top;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
