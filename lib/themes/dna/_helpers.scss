@@ -16,6 +16,8 @@ $animation-fast:      150ms;
 $animation-slow:      400ms;
 $animation-very-slow: 700ms;
 
+$ease-in-back:        cubic-bezier(.600, -.280, .735, .045);
+
 $fan-gutter:          7%;
 $fan-pos-top:         60%;
 $fan-dir-off-opacity: .3;

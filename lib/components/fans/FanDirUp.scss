@@ -15,7 +15,7 @@
   @extend %fanArrowBase;
   left: 20px;
   top: 20%;
-  transition: top $animation-fast;
+  transition: top $animation-fast $ease-in-back;
 }
 
 .on {

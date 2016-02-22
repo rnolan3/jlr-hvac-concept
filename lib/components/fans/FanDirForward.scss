@@ -17,7 +17,7 @@
   left: 15%;
   top: 55%;
   transform: rotate(-26deg);
-  transition: left $animation-fast;
+  transition: left $animation-fast $ease-in-back;
 }
 
 .on {
