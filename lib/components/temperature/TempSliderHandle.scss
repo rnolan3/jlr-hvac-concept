@@ -7,7 +7,7 @@
   height: $base-border-size;
   position: absolute;
   text-align: center;
-  top: $base-slider-offset + $base-border-size;
+  top: $base-slider-offset + $base-border-size + 2;
   transition: bottom 25ms;
   width: 30px;
 
@@ -21,9 +21,11 @@
 }
 
 .label {
+  border: $base-border-size solid $light-blue;
+  border-radius: 100px;
   color: $light-blue;
   font-size: 5rem;
-  padding: .25em .75em;
+  padding: .75em;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -61,7 +63,7 @@
   }
 
   &:before {
-    border-bottom: 15px solid $white10;
+    border-bottom: 15px solid $white33;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     top: -40px;
@@ -70,7 +72,7 @@
   &:after {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 15px solid $white10;
+    border-top: 15px solid $white33;
     bottom: -40px;
   }
 }
