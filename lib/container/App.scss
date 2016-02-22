@@ -1,11 +1,6 @@
 // App
-@import '../themes/dna';
-
-:global(#top-bar),
-:global(#bottom-bar) {
-  background: $black;
-}
 @import '../themes/dna/helpers';
+@import '../themes/dna/scaffold';
 
 // Use when there are heated seat buttons.
 // $gutter: 8%;
