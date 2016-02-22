@@ -1,0 +1,12 @@
+// DefrostButtonRow
+@import '../../themes/dna';
+
+.buttonGroup {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  right: $fan-gutter;
+  top: $fan-pos-top;
+}

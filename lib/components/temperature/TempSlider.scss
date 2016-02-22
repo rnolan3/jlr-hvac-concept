@@ -1,0 +1,21 @@
+// Slider
+@import '../../themes/dna';
+@import './TempSliderCommon';
+
+.wrapper {
+  height: 500px;
+  margin: 5%;
+  padding: 4px;
+  position: relative;
+  width: 100px;
+}
+
+.label {
+  color: $light-blue;
+  font-size: 3rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: -100px;
+  transform: translateX(-50%);
+}

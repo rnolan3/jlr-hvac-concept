@@ -1,0 +1,39 @@
+// HazardIndicator
+@import '../../themes/dna';
+
+// Banner ---------------------------
+
+.banner {
+  background: $orange-bg;
+  border-radius: 400px;
+  height: 500px;
+  left: 50%;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(3);
+  transition: opacity $animation-slow * 5, transform $animation-slow * 5;
+  transition-delay: $animation-slow * 2;
+  width: 500px;
+}
+
+// Transition ------------------------
+
+:global(.hazardBannerFill-enter) {
+  opacity: .5;
+  transform: translate(-50%, -50%) scale(.1);
+}
+
+:global(.hazardBannerFill-enter-active) {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(3);
+}
+
+:global(.hazardBannerFill-leave) {
+  transition: opacity $animation-slow, transform $animation-slow;
+}
+
+:global(.hazardBannerFill-leave-active) {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}

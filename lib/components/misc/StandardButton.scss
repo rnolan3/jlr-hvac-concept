@@ -1,0 +1,29 @@
+// Standard Button
+@import '../../themes/dna';
+
+.base {
+  @extend %button;
+  color: $white;
+  opacity: .5;
+  transition: opacity $animation-fast;
+
+  &:after {
+    background: $base-border-color;
+    bottom: 0;
+    content: '';
+    height: $button-border-size;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: background $animation-fast;
+    width: 80px;
+  }
+}
+
+.on {
+  opacity: 1;
+
+  &:after {
+    background: $light-blue;
+  }
+}

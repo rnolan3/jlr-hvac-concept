@@ -1,0 +1,27 @@
+// FanDirDown
+@import '../../themes/dna';
+@import './FanDirCommon';
+
+.base {
+  @extend %fanDirBase;
+  background: url('/images/fan_down.svg') no-repeat center right;
+  height: 200px;
+  left: 10px;
+  top: 5px;
+  width: 180px;
+}
+
+.arrow {
+  @extend %fanArrowBase;
+  left: 0;
+  top: 20%;
+  transition: top $animation-fast;
+}
+
+.on {
+  @extend %fanOnBase;
+
+  .arrow {
+    top: 25%;
+  }
+}

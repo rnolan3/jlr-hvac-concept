@@ -1,0 +1,24 @@
+// FanDirGroup
+@import '../../themes/dna';
+
+.base {
+  height: 200px;
+  left: 55%;
+  position: absolute;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+
+  &:before {
+    border: 5px solid $white10;
+    border-radius: 200px;
+    content: '';
+    display: none;
+    height: 300px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-53%, -72%);
+    width: 300px;
+  }
+}

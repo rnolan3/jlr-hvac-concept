@@ -1,0 +1,53 @@
+// HazardMarker
+@import '../../themes/dna';
+
+// Transition  Mixins ----------------
+
+@mixin markerTransition {
+  transition: opacity $animation-slow;
+}
+
+@mixin markerStart {
+  opacity: 0;
+}
+
+// Transition ------------------------
+
+:global(.markerExplode-enter) {
+  @include markerTransition;
+  @include markerStart;
+}
+
+:global(.markerExplode-enter-active),
+:global(.markerExplode-leave) {
+  @include markerTransition;
+  opacity: 1;
+}
+
+:global(.markerExplode-leave-active) {
+  @include markerTransition;
+  @include markerStart;
+}
+
+// Markers --------------------------
+
+%marker {
+  border: 10px solid transparent;
+  border-image: url('/images/orange_border.png') 15 round;
+  bottom: -20px;
+  left: 50%;
+  position: absolute;
+  top: -20px;
+  transform: translateX(-50%);
+}
+
+
+@for $m from 1 through 10 {
+  $perc: $m / 10;
+
+  .marker-#{$m} {
+    @extend %marker;
+    transition-delay: $perc * 750ms;
+    width: percentage($perc);
+  }
+}

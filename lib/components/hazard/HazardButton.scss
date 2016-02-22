@@ -1,0 +1,67 @@
+// HazardButton
+@import '../../themes/dna';
+
+$marker-gutter: 2%;
+$marker-height: 210px;
+$marker-outline-offset: -15px;
+
+.container {
+  height: $marker-height;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+@keyframes glow {
+  from { opacity: 1; }
+  to { opacity: .7; }
+}
+
+@keyframes growDiffuse {
+  from { transform: translate(-50%, -50%) scale(1); }
+  to { transform: translate(-50%, -50%) scale(5); }
+}
+
+@keyframes growFadeDiffuse {
+  from { transform: translate(-50%, -50%) scale(1); }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(6);
+  }
+}
+
+.containerDiffuse {
+  &:before {
+    animation: growFadeDiffuse $animation-slow * 3 infinite cubic-bezier(.25, .46, .45, .94);
+    animation-delay: $animation-slow * 2;
+    background: radial-gradient(circle, transparent 0%, lighten($orange, 2%) 45%, transparent 50%) no-repeat center;
+    content: '';
+    height: 300px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 300px;
+  }
+}
+
+:global(.simpleFade-enter) {
+  opacity: 0;
+  transition: opacity $animation-slow;
+}
+
+:global(.simpleFade-enter-active) {
+  opacity: 1;
+}
+
+:global(.simpleFade-leave) {
+  opacity: 1;
+  transition: opacity $animation-slow;
+}
+
+:global(.simpleFade-leave-active) {
+  opacity: 0;
+}

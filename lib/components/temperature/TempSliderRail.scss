@@ -1,0 +1,19 @@
+// SliderRail
+@import '../../themes/dna';
+@import './TempSliderCommon';
+
+.rail {
+  background: $white10;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: $base-border-size;
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+}

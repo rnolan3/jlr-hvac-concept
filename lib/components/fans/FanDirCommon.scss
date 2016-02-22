@@ -1,0 +1,18 @@
+%fanDirBase {
+  border: 0;
+  opacity: $fan-dir-off-opacity;
+  position: absolute;
+  transition: opacity $animation-fast;
+}
+
+%fanArrowBase {
+  position: absolute;
+}
+
+%fanOnBase {
+  opacity: 1;
+
+  &:after {
+    opacity: $fan-dir-on-opacity;
+  }
+}

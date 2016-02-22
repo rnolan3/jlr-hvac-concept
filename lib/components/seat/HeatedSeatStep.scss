@@ -1,0 +1,22 @@
+// HeatedSeatStep
+@import '../../themes/dna';
+
+.wrapper {
+  width: 10px;
+}
+
+.line {
+  animation: dash $animation-slow * 3 linear infinite;
+  stroke-dasharray: 68;
+  stroke-dashoffset: 0;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 68 * 2 - 1;
+  }
+}

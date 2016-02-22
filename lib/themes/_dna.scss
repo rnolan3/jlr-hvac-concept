@@ -1,0 +1,36 @@
+
+$white:               #fff;
+$white10:             rgba($white, .1);
+$black:               #000;
+
+$light-blue:          rgb(170, 240, 255);
+$orange:              #ff604b;
+$orange-bg:           rgba(darken($orange, 15%), .25);
+
+$base-border-size:    4px;
+$base-border-color:   $white10;
+
+$button-border-size:  5px;
+
+$animation-fast:      150ms;
+$animation-slow:      400ms;
+$animation-very-slow: 700ms;
+
+$fan-gutter:          7%;
+$fan-pos-top:         60%;
+$fan-dir-off-opacity: .3;
+$fan-dir-on-opacity:  .2;
+
+$dial-size: 450px;
+$canvas-size: 442px;
+$dial-trim-size: 44px;
+
+%button {
+  border: 0;
+  color: $white;
+  font-size: 4rem;
+  height: 120px;
+  padding: 3rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}

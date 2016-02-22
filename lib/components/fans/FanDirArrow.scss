@@ -1,0 +1,15 @@
+// FanDirArrow
+
+.button {
+  background: url('/images/arrow.svg') center no-repeat;
+  height: 50px;
+  width: 50px;
+
+  &.down {
+    transform: rotate(90deg);
+  }
+
+  &.up {
+    transform: rotate(-90deg);
+  }
+}

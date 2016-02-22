@@ -1,0 +1,12 @@
+// FanDial
+@import '../../themes/dna';
+
+.wrapper {
+  background: $black;
+  height: $dial-size;
+  left: 50%;
+  position: absolute;
+  top: 62%;
+  transform: translateX(-50%);
+  width: $dial-size;
+}

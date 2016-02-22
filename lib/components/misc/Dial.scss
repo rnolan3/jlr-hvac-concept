@@ -1,0 +1,74 @@
+// Dial
+@import '../../themes/dna';
+
+.dial {
+  border: $base-border-size solid $white10;
+  border-radius: $dial-size / 2;
+  height: $dial-size;
+  width: $dial-size;
+}
+
+.progress {
+  height: $canvas-size;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: $canvas-size;
+}
+
+.barCanvas {
+  background: transparent;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.handle {
+  height: $dial-trim-size + $base-border-size * 4;
+  left: $canvas-size / 2;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: $dial-trim-size / 2 + $base-border-size * 4;
+  z-index: 1;
+
+  &:after {
+    border: $base-border-size solid $white;
+    border-radius: $dial-trim-size / 2;
+    box-shadow: inset 0 0 0 $base-border-size * 2 $black, 0 0 0 $base-border-size * 2 $black;
+    content: '';
+    display: block;
+    height: $dial-trim-size;
+    left: -($dial-trim-size / 2);
+    position: absolute;
+    top: 0;
+    width: $dial-trim-size;
+  }
+}
+
+.label {
+  border-left: $base-border-size solid $white;
+  height: 50px;
+  left: $canvas-size / 2;
+  position: absolute;
+  top: -30px;
+  width: 20px;
+
+  .fan {
+    animation-iteration-count: infinite;
+    animation-name: spin;
+    animation-timing-function: linear;
+    background: url('/images/fan.svg') no-repeat center;
+    height: 50px;
+    left: -25px;
+    position: absolute;
+    top: -120%;
+    width: 50px;
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

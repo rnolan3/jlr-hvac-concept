@@ -1,0 +1,50 @@
+// App
+@import '../themes/dna';
+
+:global(#top-bar),
+:global(#bottom-bar) {
+  background: $black;
+}
+
+// Use when there are heated seat buttons.
+// $gutter: 8%;
+$gutter: 15%;
+
+.tempWrapper {
+  margin-top: 330px;
+  position: relative;
+}
+
+.colLeft,
+.colRight {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+}
+
+.colRight {
+  right: $gutter;
+}
+
+.colLeft {
+  left: $gutter;
+}
+
+:global(.grow-appear) {
+  height: 100%;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(.97);
+  width: 100%;
+}
+
+:global(.grow-appear-active) {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $animation-slow, opacity $animation-slow;
+}
