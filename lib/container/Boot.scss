@@ -12,14 +12,21 @@ $row-opacity:   .16;
 
 @keyframes wave {
   0% {
+    transform: scale(.9);
     opacity: 0;
   }
 
+  30% {
+    opacity: $row-opacity;
+  }
+
   60% {
+    transform: sclae(1);
     opacity: $row-opacity;
   }
 
   100% {
+    transform: scale(.9);
     opacity: 0.001;
   }
 }
