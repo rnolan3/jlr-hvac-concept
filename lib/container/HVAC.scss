@@ -4,7 +4,16 @@
 
 // Use when there are heated seat buttons.
 // $gutter: 8%;
-$gutter: 15%;
+$gutter: 135px;
+
+.wrapper {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
 
 .tempWrapper {
   margin-top: 330px;
@@ -31,16 +40,10 @@ $gutter: 15%;
 
 :global(.grow-appear) {
   height: 100%;
-  left: 50%;
   opacity: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(.97);
-  width: 100%;
 }
 
 :global(.grow-appear-active) {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform $animation-slow, opacity $animation-slow;
+  transition: opacity $animation-very-slow;
 }
