@@ -5,6 +5,7 @@
 :global(#bottom-bar) {
   background: $black;
 }
+@import '../themes/dna/helpers';
 
 // Use when there are heated seat buttons.
 // $gutter: 8%;
