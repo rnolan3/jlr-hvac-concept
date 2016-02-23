@@ -16,7 +16,7 @@ After checking out the repo, in your bash run:
 npm install
 ```
 
-This will grab the required dependencies from NPM and check out [DNA_common](https://github.com/PDXostc/DNA_common) into the project directory. This will take a hot second, so grab a beverage of your choice.
+This will grab the required dependencies from NPM and clone [DNA_common](https://github.com/PDXostc/DNA_common) into the project directory. This will take a hot second, so grab a beverage of your choice.
 
 #### Starting the dev server
 
