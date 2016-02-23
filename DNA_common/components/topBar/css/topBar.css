@@ -1,0 +1,193 @@
+/* Top & Bottom Bar */
+
+#top-bar,
+#bottom-bar {
+  background-color: rgba(255,255,255,.25);
+  box-shadow: inset 0 0 6.4rem black;
+  display: flex;
+  flex: 0 0 120px;
+  margin: 0;
+  outline: 2px solid rgba(75, 75, 75, .25);
+  padding: 0;
+  z-index: 1;
+}
+
+/* Top Bar */
+
+.topbar-space {
+  flex: 1;
+  margin: 0; 
+  padding: 10px;
+  display: inline-flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar-space:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+#app-grid-button, 
+#home-screen-button {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#home-screen-button img,
+#app-grid-button img {
+  width: 80px;
+}
+
+/* Application Grid ***************************************/
+
+.hexGridHeading {
+	background-color: #c4c4c4;
+	border: 1px solid orange;
+	color: white;
+	font-size: 25px;
+	line-height: 45px;
+	padding-left: 15px;
+	position: fixed;
+	width: 92%;
+	z-index: 2;
+}
+
+.homeScrAppGridText {
+	font-size: 20px;
+	line-height: 18px;
+	white-space: nowrap;
+}
+
+.exitButton {
+	float: right;
+}
+
+#app-grid-view {
+	-webkit-mask: -webkit-gradient(linear, 0 1920, 0 1200,  from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
+	background-color:rgba(0,0,0,1);
+	bottom:120px;
+	display:none;
+	font-size:20px;
+	left: 0;
+	padding:32px;
+	position:absolute;
+	top:120px;
+	touch-action: pan-y;
+	width:100%;
+	z-index:5;
+}
+
+.HSAGWHeading {
+	color: white !important;
+	font-size: 40px;
+	margin: 0 0 47px 0;
+	text-transform:uppercase;
+}
+
+.homeScrAppGridFrame {
+	background-color: rgba(0, 0, 0, .2);
+	float: left;
+	height: 196px;
+	margin: 3px;
+	text-align: center;
+	width: 196px;
+}
+
+.homeScrAppGridImg img {
+	height: 100px;
+	margin-top: 40px;
+}
+
+#hexGrid {
+	margin-top: 100px;
+}
+
+.hexrow {
+	/*right/left margin set at (( width of child div x sin(30) ) / 2) makes a fairly tight fit; a 3px bottom seems to match*/
+	margin: 0 25px 3px; 
+	white-space: nowrap;
+}
+.hexrow > div {
+	background-image: url('../images/AppHex.png');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	color: white;
+	display: inline-block;
+	line-height: 12px; /*equals height*/
+	margin: 20px -4px; 
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.hexrow > div:nth-child(odd) {
+	top: -44.8px; /* -1 x( ( width x cos(30) / 2) + (hexrow bottom margin / 2)) */ 
+}
+
+.hexrow > div:nth-child(even) {
+	top: 73.3px; /* ( width x cos(30) / 2 ) */
+}
+
+.hexrow > div > div:first-of-type {
+	background-image: inherit;
+	height: 100%; 
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	transform:rotate(60deg);
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.hexrow > div > div:first-of-type:before {
+	background-image: inherit;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	bottom: 0;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	transform-origin: 0 0;
+	transform:rotate(-60deg) translate(-150px, 0);
+	width: 200px; /* width of main + margin sizing */
+	z-index: 1;
+}
+
+.hexrow > div > div:last-of-type {
+	background-image: inherit;
+	content: '';
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	transform:rotate(-60deg);
+	width: 100%;
+	z-index: -2;
+}
+
+.hexrow > div > div:last-of-type:before {
+	background-image: inherit;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	bottom: 0;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	transform-origin: 100% 0;
+	/*translate properties are initial width (100px) and half height (173.2 / 2 = 86.6) */
+	transform:rotate(60deg) translate(100px, 86.6px);
+	width: 200px; /* starting width + margin sizing */
+	z-index: 1;
+}
+
+.hexrow > div > span {
+	vertical-align: middle;
+	white-space: normal;
+}

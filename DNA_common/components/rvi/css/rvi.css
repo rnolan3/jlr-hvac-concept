@@ -1,0 +1,105 @@
+/*#settings {
+  z-index: 20;
+  display: none;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+}*/
+
+#messageOverlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  background: rgba(0,0,0,.8);
+}
+
+/*.text {
+  line-height: 3rem;
+  padding: 30px 0;
+  padding: 0;
+  text-align: right;
+}*/
+
+/*.textBox {
+  font-family: sans-serif, 'Arial';
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1% 0 4% 2%;
+  padding-left: 1%;
+  color: #606060;
+  border: none;
+  background-color: #fff;
+}*/
+
+#setupForm {
+  display: block;
+}
+
+.inputBox .deleteButton {
+  display: inline-block;
+  float: right;
+  width: 55px;
+  height: 36px;
+  margin: 18px 0 0 -73px;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.rviElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.component-tabs {
+  margin: 40px 40px 0 40px;
+  padding: 0 35px;
+}
+
+.rvi-tabs {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 20px;
+  color: rgba(254, 156, 0, .7);
+  background: #181818;
+}
+
+.tab-selected {
+  color: #fe9c00;
+  background: #222;
+}
+
+.qrcode {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.qrcode-display {
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: url('../../../images/qrcode.png');
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px 300px;
+  box-shadow: inset 0 0 2px 1px #444;
+}
+
+section.box-infill {
+  max-width: 60%;
+}
+
+#resultMessage .box-header {
+  min-width: 550px;
+}

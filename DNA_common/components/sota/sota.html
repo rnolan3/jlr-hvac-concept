@@ -1,0 +1,54 @@
+<!-- Leave the "open" class for modal re-factor, which shall use 100% flex layout.
+Place modal just before the closing <div> tag above the "bottom-bar" div. 
+Can use the id + "open" class for jquery to open this modal, and close the progress bar 
+once progress reaches 100%, or use "hidden" on "progress-container" and show 
+<p class="box-title">Software installation is complete!</p>, but modify sota.js to make it so, however this shall be an issue if user dismisses the progress-bar modal, which is why 
+to keep these modals in 3 parts -->
+
+<!-- Initial SOTA notification -->
+<div id="updates" class="modal open hidden">
+  <form class="box-infill box-infill-orange">
+    <div id="close-sota" class="close-button"></div>
+    <header class="box-header">
+      <p class="box-title">SOFTWARE UPDATES OVER THE AIR</p>
+    </header>
+    <div class="box-content">
+      <p>Details</p>
+      <ul>
+      </ul>
+      <div class="center">
+        <button id="sota-install" class="button-outline button-yellow">install</button>
+      </div>   
+    </div>
+  </form>
+</div>
+
+<!-- PROGRESS BAR -->
+<!-- it is necessary to dynamically insert the value and content in order to see
+both the bar and the text percentage -->
+<div id="progress-bar" class="modal open hidden">
+  <form class="box-infill box-infill-orange">
+    <div id="close-sota" class="close-button"></div>
+    <header class="box-header">
+      <p class="box-title">SOFTWARE UPDATES OVER THE AIR</p>
+    </header>
+    <div class="box-content">
+        <div class="progress-container">
+          <progress id="progress-bar" value="" max="100"><span>0</span>%</progress>
+        </div>
+    </div>
+  </form>
+</div>
+
+<!-- POPUP/MODAL dialog box to notify of confirmation -->
+<div id="sota-complete" class="modal open hidden">     
+  <div class="box-infill box-infill-orange"> 
+    <div id="close-sota" class="close-button"></div>
+    <header class="box-header">
+      <p class="box-title">SOFTWARE UPDATES OVER THE AIR</p>
+    </header>
+    <div class="box-content">
+      <p>Software installation is complete!</p>
+    </div>
+  </div>      
+</div> 

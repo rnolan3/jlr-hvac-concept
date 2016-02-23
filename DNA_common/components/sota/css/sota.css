@@ -1,0 +1,12 @@
+.modal .close-button {
+  flex: 1;
+  position: relative;
+  margin-top: -10px;
+}
+
+#updates .box-header,
+#progress-bar .box-header,
+#sota-complete .box-header {
+  min-width: 550px;
+}
+

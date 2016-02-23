@@ -1,0 +1,73 @@
+<!-- RVI html template page for settings -->
+
+<div id="rviPage" class="tabs rviPage hidden">
+
+	<div class="component-top">
+		<div class="component-head"> 
+			<div id="rviBackArrow" class="settings-back-arrow"></div>
+			<div class="blue-rectangle"></div>
+			<div class="blue-caption-text">SETTINGS</div>			
+			<div class="component-title">RVI</div>
+			<div class="settings-clear">	</div>
+		</div>
+		<div class="component-subhead border">
+			<h2>Remote Vehicle Interaction</h2>		
+		</div>
+	</div>
+
+
+	<div class="component-tabs">
+		<h3 id="setup-tab" onclick="showContent" class="rvi-tabs">Setup</h3>
+		<h3 id="apps-tab" class="rvi-tabs tab-selected">Applications</h3>
+	</div>
+
+	<div id="setup-content" class="component-content hidden">
+		<form id="rviSetup" class="component-form">			
+			<div class="input-group">
+				<label for="" class="component-label">VIN Number</label>
+				<input type="text" name="focus" class="text-input input-white" id="vinNumber" placeholder="Enter new number">
+				<div class="delete-button" type="reset"></div>				
+			</div>
+
+			<div class="flex-center">
+				<input type="button" class="no margin button-blue" value="submit" id="saveRviSettings">
+			</div>
+			<div class="flex-column-center center qrcode hidden">
+				<h6 for="">VIN Number QR code</h6>
+				<div id="qr-code" class="qrcode-display"></div>
+			</div>
+		</form>
+	</div>
+
+	<div id="apps-content" class="component-content">
+		<div class="component-form">
+			<div class="rviElement">
+				<div class="padding-top"><h4>HVAC</h4></div>
+				<div class="networkElementButton">
+					<div id="rvi-hvacPowerButton" class="settings-switch">
+						<div class="switch off switch-xsmall">
+						  <div class="switch-plate">
+						    <div class="switch-control"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="resultMessage" class="modal hidden">
+		<section class="box-infill box-infill-orange">
+			<div id="" class="close-button"></div>
+			<header class="box-header">
+        <p class="box-title">Success!</p>
+      </header>
+      <div class="box-content">
+        <p>You have saved information on this device that will enable RVI.</p>
+      </div>
+		</section>
+	</div>
+</div>
+
+ 

@@ -1,0 +1,34 @@
+<!--settings template file. -->
+
+<!-- The following is a template for the settings icon in bottom bar.-->
+<img id="settings-icon" src="./DNA_common/images/settings_icon.png">
+
+<!-- settings Page:  this is used as a page for all settings components appended to  body-->
+<div id="settingsPage" class="settingsPage hidden">
+	<div id="tabsTopPanel" class="tabsTopPanel">
+		<div class="tabsTopPanelTitle">
+			<div class="blue-rectangle"></div>
+			<div class="blue-caption-text">APPS</div>
+		</div>
+
+		<div id="SettingsTabsCloseButton" class="tabsCloseButton"></div>
+
+		<div id="tabsTabsID" class="tabsTabs">	
+			<div onclick="$('#settingsTabs').tabs('tabsTabClick',0);" id="tabsTab0" class="tabsTab">SETTINGS</div>
+			<!-- <div class="tabsTabClear"></div> -->
+		</div>
+	</div>
+	<!-- add class 'hidden' to this id tabsTopSubPanel, when component is displayed -->
+	<div id="tabsTopSubPanel" class="tabsTopSubPanel">
+		<div id="tabsContent" class="settingsContent">
+			<ul id="settingsPageList">
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- settings Page Item:  This is a templated to append new setting componets in settings menu-->
+<div id="settingsPageItem">
+	<li class="settingElement"><a>Name X</a></li>
+</div>
+

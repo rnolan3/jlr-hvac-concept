@@ -1,0 +1,136 @@
+.noUiSliderBass,
+.noUiSliderBass *,
+.noUiSliderTreble,
+.noUiSliderTreble *,
+.noUiSliderSub,
+.noUiSliderSub * {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.noUiSliderBass,
+.noUiSliderTreble,
+.noUiSliderSub {
+  position: absolute;
+}
+.noUiSliderBass a,
+.noUiSliderTreble a,
+.noUiSliderSub a {
+  position: absolute;
+  z-index: 1;
+}
+.noUiSliderBass a:nth-child(2),
+.noUiSliderTreble a:nth-child(2),
+.noUiSliderSub a:nth-child(2) {
+  background: inherit !important;
+}
+.noUiSliderBass.vertical a,
+.noUiSliderTreble.vertical a,
+.noUiSliderSub.vertical a {
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .noUiSliderBass:before,
+  .noUiSliderTreble:before,
+  .noUiSliderSub:before,
+  body.TOUCH,
+  .noUiSliderBass div,
+  .noUiSliderTreble div,
+  .noUiSliderSub div {
+    -ms-touch-action: none;
+  }
+  .noUiSliderBass:before,
+  .noUiSliderTreble:before,
+  .noUiSliderSub:before {
+    position: absolute;
+    z-index: -1;
+    top: -150%;
+    left: -25%;
+    display: block;
+    width: 150%;
+    height: 400%;
+    content: '';
+  }
+  .noUiSliderBass.vertical:before,
+  .noUiSliderTreble.vertical:before,
+  .noUiSliderSub.vertical:before {
+    top: -25%;
+    left: -150%;
+    width: 400%;
+    height: 150%;
+  }
+}
+.noUiSliderBass,
+.noUiSliderTreble,
+.noUiSliderSub {
+  border-radius: 3px;
+}
+.noUiSliderBass.connect a,
+.noUiSliderTreble.connect a,
+.noUiSliderSub.connect a,
+.noUiSliderBass.connect.lower,
+.noUiSliderTreble.connect.lower,
+.noUiSliderSub.connect.lower {
+  background: url('/images/temp_bar_on_left_52_407.svg') no-repeat left bottom;
+  background-size: 100%;
+}
+.noUiSliderBass.disabled,
+.noUiSliderBass.disabled.connect.lower a {
+  background: #ccc;
+  box-shadow: none;
+}
+.noUiSliderBass div,
+.noUiSliderTreble div,
+.noUiSliderSub div,
+.noUiSliderVolume div {
+  width: 180%;
+  height: 100px;
+  border-radius: 3px;
+  background: #efefe7;
+  background: url('/images/drag_knob.svg') no-repeat left center;
+  background-size: 26%;
+}
+.noUiSliderBass.disabled div {
+  background: transparent;
+}
+.noUiSliderBass.vertical,
+.noUiSliderTreble.vertical,
+.noUiSliderSub.vertical {
+  width: 7.22222222222222%;/*52/720*/
+  height: 40.7%;/*407/1000*/
+}
+.noUiSliderBass.vertical div,
+.noUiSliderTreble.vertical div,
+.noUiSliderSub.vertical div {
+  margin: -93% 0 0 -26%;
+}
+.noUiSliderBass {
+  top: 48.1%;
+  left: 5.7%;
+}
+.noUiSliderTreble {
+  top: 48.1%;
+  left: 21.55%;
+}
+.noUiSliderSub {
+  top: 48.1%;
+  left: 36.9%;
+}
+.noUiSliderVolume {
+  top: 96.75%;
+  left: 16%;
+  width: 68.5%;
+  height: 7.5%;
+}
+
+.noUiSliderVolume div {
+  width: 100px;
+  height: 100%;
+}
