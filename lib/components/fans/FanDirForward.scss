@@ -4,12 +4,12 @@
 
 .base {
   @extend %fanDirBase;
-  background: url('/images/fan_forward.svg') no-repeat 95px bottom;
-  height: 130px;
-  left: 65px;
-  top: -65px;
+  background: url('/images/fan_forward.svg') no-repeat 85px bottom;
+  height: 100px;
+  left: 113px;
+  top: 50px;
   transform: rotate(26deg);
-  width: 200px;
+  width: 160px;
 }
 
 .arrow {
@@ -17,7 +17,7 @@
   left: 15%;
   top: 55%;
   transform: rotate(-26deg);
-  transition: left $animation-fast $ease-in-back;
+  transition: left $animation-fast;
 }
 
 .on {

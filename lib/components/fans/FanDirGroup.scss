@@ -2,11 +2,14 @@
 @import '../../themes/dna/helpers';
 
 .base {
-  height: 200px;
-  left: 55%;
+  //background: yellow;
+  border-radius: 150px;
+  height: 300px;
+  left: 50%;
   position: absolute;
-  top: 57%;
+  right: 0;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
-  z-index: 2;
+  z-index: 5;
 }

@@ -5,8 +5,8 @@
 .base2 {
   @extend %fanDirBase;
   height: 80px;
-  left: -10px;
-  top: -50px;
+  left: 30px;
+  top: 40px;
   width: 80px;
   z-index: 1;
 }
@@ -15,7 +15,7 @@
   @extend %fanArrowBase;
   left: 20px;
   top: 20%;
-  transition: top $animation-fast $ease-in-back;
+  transition: top $animation-fast;
 }
 
 .on {

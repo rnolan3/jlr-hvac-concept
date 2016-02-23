@@ -6,8 +6,8 @@
   @extend %fanDirBase;
   background: url('/images/fan_down.svg') no-repeat center right;
   height: 200px;
-  left: 10px;
-  top: 5px;
+  left: 50px;
+  top: 100px;
   width: 180px;
 }
 
@@ -15,7 +15,7 @@
   @extend %fanArrowBase;
   left: 0;
   top: 20%;
-  transition: top $animation-fast $ease-in-back;
+  transition: top $animation-fast;
 }
 
 .on {

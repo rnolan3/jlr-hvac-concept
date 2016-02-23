@@ -1,6 +1,8 @@
 %fanDirBase {
   border: 0;
+  margin: 0;
   opacity: $fan-dir-off-opacity;
+  padding: 0;
   position: absolute;
   transition: opacity $animation-fast;
 }
