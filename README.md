@@ -69,6 +69,6 @@ Like the project that this is based on, it doesn't work with a car...
 
 ___
 
-Thanks for checking this out.
+Thanks for checking out this project.
 
 — Robert Nolan, [@rnolan3](https://github.com/rnolan3)
