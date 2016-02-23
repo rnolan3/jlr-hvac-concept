@@ -1,32 +1,45 @@
 
-$white:               #fff;
-$white10:             rgba($white, .1);
-$white33:             rgba($white, .33);
-$black:               #000;
+// Colors -------------------------------
 
-$light-blue:          rgb(170, 240, 255);
-$orange:              #ff604b;
-$orange-bg:           rgba(darken($orange, 15%), .25);
+$white:                     #fff;
+$white10:                   rgba($white, .1);
+$white33:                   rgba($white, .33);
+$black:                     #000;
 
-$base-border-size:    4px;
-$base-border-color:   $white33;
+$light-blue:                rgb(170, 240, 255);
+$orange:                    #ff604b;
+$orange-bg:                 rgba(darken($orange, 15%), .25);
 
-$button-border-size:  5px;
 
-$animation-fast:      150ms;
-$animation-slow:      400ms;
-$animation-very-slow: 600ms;
+// Borders -------------------------------
 
-$ease-in-back:        cubic-bezier(.6, -.28, .735, .045);
+$base-border-size:          4px;
+$base-border-color:         $white33;
 
-$fan-gutter:          7%;
-$fan-pos-top:         60%;
-$fan-dir-off-opacity: .3;
-$fan-dir-on-opacity:  .2;
+$button-border-size:        5px;
 
-$dial-size: 490px;
-$canvas-size: 480px;
-$dial-trim-size: 54px;
+
+// Animations ----------------------------
+
+$animation-fast:            150ms;
+$animation-slow:            400ms;
+$animation-very-slow:       600ms;
+
+
+// Fans ----------------------------------
+
+$fan-gutter:                7%;
+$fan-pos-top:               60%;
+$fan-dir-off-opacity:       .3;
+$fan-dir-on-opacity:        .2;
+
+// Fan Dial
+$dial-size:                 490px;
+$canvas-size:               480px;
+$dial-trim-size:            54px;
+
+
+// Placeholders ---------------------------
 
 %button {
   border: 0;
