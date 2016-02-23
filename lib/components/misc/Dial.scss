@@ -1,7 +1,7 @@
 // Dial
 @import '../../themes/dna/helpers';
 
-$fanLabelSize: 100px;
+$fan-label-size: 100px;
 
 .dial {
   border-radius: $dial-size / 2;
@@ -28,6 +28,7 @@ $fanLabelSize: 100px;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  transition: transform $animation-slow;
   width: $canvas-size;
   z-index: 2;
 }
@@ -80,12 +81,12 @@ $fanLabelSize: 100px;
     animation-timing-function: linear;
     background: url('/images/fan.svg') no-repeat center;
     border: $base-border-size solid $white;
-    border-radius: $fanLabelSize / 2;
-    height: $fanLabelSize;
-    left: -$fanLabelSize /2;
+    border-radius: $fan-label-size / 2;
+    height: $fan-label-size;
+    left: -$fan-label-size / 2;
     position: absolute;
-    top: -$fanLabelSize;
-    width: $fanLabelSize;
+    top: -$fan-label-size;
+    width: $fan-label-size;
   }
 }
 
