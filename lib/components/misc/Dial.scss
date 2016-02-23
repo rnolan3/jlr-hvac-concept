@@ -22,13 +22,18 @@ $fan-label-size: 100px;
   }
 }
 
+.dragging {
+  .progress {
+    transition: none;
+  }
+}
+
 .progress {
   height: $canvas-size;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: transform $animation-slow;
   width: $canvas-size;
   z-index: 2;
 }
