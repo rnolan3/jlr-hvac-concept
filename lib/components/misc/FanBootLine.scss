@@ -13,13 +13,13 @@
   width: 0;
 
   &:after {
+    background: $black;
+    bottom: -2px;
     content: '';
     display: block;
-    background: $black;
+    left: 50%;
     position: absolute;
     top: -2px;
-    bottom: -2px;
-    left: 50%;
     transform: translateX(-50%);
     transition: width $animation-very-slow;
     width: 0;
