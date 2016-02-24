@@ -1,5 +1,7 @@
 # JLR HVAC Concept
 
+![Travis CI](https://travis-ci.org/rnolan3/JLR-HVAC-Concept.svg?branch=master)
+
 ### Inspiration
 
 Inspired by [PDXostc's HVAC project](https://github.com/PDXostc/hvac), this is purely a technical and stylistic exercise that is aimed to create a clean and simple HVAC interface. The interface takes design cues from the [Land Rover Discovery Vision Concept](http://www.landroverusa.com/future-vehicles/discovery-vision-concept.html).
