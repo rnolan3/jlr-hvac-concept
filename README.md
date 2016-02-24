@@ -24,11 +24,21 @@ This will grab the required dependencies from NPM and clone [DNA_common](https:/
 
 #### Starting the dev server
 
+To start the dev server:
+
 ```
 npm start
 ```
 
 Once the server has started, browse to `localhost:8080` to view the application.
+
+#### Browser environment
+
+Please note the following browser requirements for the application to work as designed:
+
+* *Chrome 48* or newer
+* *Touch emulation* must be turned on. This is required for the touch events to trigger.
+* The browser viewport should be set to *1080x1920*
 
 
 ## Technology Choices
