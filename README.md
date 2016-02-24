@@ -1,5 +1,7 @@
 # JLR HVAC Concept
 
+![Travis CI](https://travis-ci.org/rnolan3/JLR-HVAC-Concept.svg?branch=master)
+
 
 ### Inspiration
 
