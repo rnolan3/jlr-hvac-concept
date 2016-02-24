@@ -80,6 +80,7 @@ Like the project that this is based on, it doesn't work with a car...
 
 ## Future development
 
+* Add rendering optimizations
 * Cleaner 'Auto AC' logic
 * Heated seat control
 
