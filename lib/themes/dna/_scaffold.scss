@@ -5,3 +5,7 @@
 body {
   background: $black;
 }
+
+:global(.settingsPage) {
+  z-index: 5;
+}
